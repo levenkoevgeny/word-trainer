@@ -1,15 +1,16 @@
 {
   "expo": {
-    "name": "word-trainer",
+    "name": "Word Trainer",
     "slug": "word-trainer",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
+    "platforms": ["android"],
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -21,9 +22,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.levenko.word_trainer",
+      "versionCode": 2,
+      "permissions": ["VIBRATE", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
